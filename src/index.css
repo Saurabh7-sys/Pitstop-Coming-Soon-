@@ -1,13 +1,302 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+KR&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stardos+Stencil:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Pro Racing Slant Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pro Racing Slant Regular'), url('/Aadarsh/DigiDose Project/PitStop ComingSoon Page base/pistop/src/fonts/ProRacingSlant-w1Mo9.woff') format('woff');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Background styles */
+/* .bg-stage-1 {
+  background: linear-gradient(to top right, rgb(181, 115, 1), rgb(144, 84, 24));
 }
+
+.bg-stage-2 {
+  background: linear-gradient(to top right, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+.bg-stage-3 {
+  background: linear-gradient(to top right, rgb(181, 115, 1), rgb(144, 84, 24));
+}
+
+
+.bg-stage-4 {
+  background: linear-gradient(to top right, rgb(0, 0, 0), rgb(0, 0, 0));
+} */
+.bgcontainer{
+  background-color: #000;
+}
+/* .bg-stage-1 {
+  background: linear-gradient(135deg, 
+    rgb(181, 115, 1),
+    rgb(129, 80, 31),
+    rgb(98, 61, 25),
+    rgb(80, 50, 20),
+    rgb(33, 21, 10),
+    rgb(0, 0, 0)
+  );
+  background-size: 400% 400%;
+  animation: smoothColorShift 15s ease infinite;
+}
+
+@keyframes smoothColorShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.uae-container {
+  position: fixed;
+top: 0;
+right: 0;
+
+}
+.uae{
+  width: 3vw;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+/* Mobile view */
+.logo-mobile {
+  position: fixed;
+  top: 10%;
+  left: 56%;
+  transform: translateX(-50%);
+}
+
+/* Desktop view */
+.logo-desktop {
+  position: absolute;
+  top: 15%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+}
+
+/* Logo with Fade-Scale Animation */
+.logo {
+  width: 25vw; /* Adjust as needed */
+  height: auto;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInFromTop 0.9s ease-out forwards;
+  z-index: 10;
+}
+
+/* Keyframes for Logo Animation */
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.h1{
+  font-family: 'Pro Racing Slant Regular';
+  font-size: 4rem !important;
+    color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+span{
+  font-family: 'Pro Racing Slant Regular';
+  font-size: 4rem !important;
+    color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+/* .h2{
+  padding-left: 20px;
+  font-family: 'Pro Racing Slant Regular';
+  font-size: 4rem !important;
+    color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+} */
+/* Mobile-specific logo size */
+@media only screen and (max-width: 768px) {
+
+  .logo {
+    width: 60vw;
+  }
+  .uae-container {
+    position: fixed !important;
+    right: 0;
+    bottom: 0;
+    top: auto; /* Ensure top is unset */
+  }
+
+  .uae {
+    width: 15vw; /* Increase size if needed */
+    margin-bottom: 30px; /* Reset margins for better positioning */
+    margin-right: 30px;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+}
+
+/* Background image */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/carbgnew.webp');  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+.mainContainer{
+  position: absolute;
+  right: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .background-image {
+    background: url('./assets/carbg.webp');
+    background-size: cover;
+  }
+}
+
+/* Progress bar customization */
+.progress-container {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.custom-progress {
+  height: 8px !important;
+  background-color: #333 !important;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-bar {
+  transition: width 0.1s linear !important;
+}
+
+.car-icon {
+  position: absolute;
+  top: -36px !important;
+  transform: translateX(-100%);
+  transition: left 0.1s linear !important;
+  z-index: 2 !important;
+}
+
+.car-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carIcon {
+  width: 104px;
+  height: 34px;
+}
+
+/* Icon styling */
+.icon-container {
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+
+.icon-button {
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon-button img {
+  filter: brightness(0.5);
+  transition: filter 0.3s ease;
+}
+
+.icon-button.active img {
+  filter: brightness(1);
+}
+
+/* Coming Soon footer */
+.coming-soon-footer {
+  position: fixed;
+  left: -45%;
+  top: 50%;
+  width: 200%; /* Increase the width to ensure it spans the entire viewport */
+  transform: translateY(-50%) rotate(-90deg) !important;
+  background-color: transparent;
+ 
+}
+
+.coming-soon-text {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Marquee animation for "Coming Soon" text */
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0); /* Only move half way through the content */
+  }
+}
+
+.comingSoon {
+  font-family: "Pro Racing Slant Regular";
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 38px !important;
+  /* font-size: clamp(3.5vw, 4vw, 5vw)!important; */
+  margin-right: 20px !important;
+  margin-top: 20px;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 200s linear infinite;
+  white-space: nowrap;
+  width: max-content; /* Ensure the container fits all the content */
+}
+
+/* Mobile-specific text size */
+@media only screen and (max-width: 768px) {
+  .comingSoon {
+    font-size: 32px !important;
+    margin-right: 20px !important;
+    margin-top: 50px !important;
+  }
+}
+
+
