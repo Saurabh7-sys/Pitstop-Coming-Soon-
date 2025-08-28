@@ -1,0 +1,42 @@
+.Services {
+  background-color: black;
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 50px;
+}
+
+.gridContainer {
+  position: absolute;
+  width: 90%;
+  right: 0 !important;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.SecondGridContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SecondGridContainer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Services h1 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-family: "Pro Racing Slant Regular";
+ position: relative;
+ top: 40px;
+}

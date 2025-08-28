@@ -1,0 +1,66 @@
+.footerMain {
+  background: #000; /* pure black */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(244, 181, 32, 0.5); /* subtle golden line */
+  box-shadow: 0 -2px 15px rgba(244, 181, 32, 0.25); /* golden glow upwards */
+  position: relative;
+  overflow: hidden;
+}
+
+.footerMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(244, 181, 32, 0.08),
+    transparent
+  );
+  transform: skewY(-5deg);
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(244, 181, 32, 0.4)); /* golden glow */
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.footerContent p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.footerContent p:hover {
+  color: #F4B520; /* turns golden on hover */
+  transform: translateY(-2px);
+}
+
+.launching {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.copy {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.country {
+  font-size: 0.9rem;
+}

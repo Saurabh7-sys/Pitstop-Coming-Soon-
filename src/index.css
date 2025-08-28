@@ -5,8 +5,10 @@
   font-family: 'Pro Racing Slant Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Pro Racing Slant Regular'), url('/Aadarsh/DigiDose Project/PitStop ComingSoon Page base/pistop/src/fonts/ProRacingSlant-w1Mo9.woff') format('woff');
+  src: url('./fonts/ProRacingSlant-w1Mo9.woff') format('woff');
 }
+
+
 
 /* Background styles */
 /* .bg-stage-1 {
@@ -74,7 +76,7 @@ right: 0;
 
 /* Mobile view */
 .logo-mobile {
-  position: fixed;
+  position: absolute;
   top: 10%;
   left: 56%;
   transform: translateX(-50%);
@@ -145,7 +147,7 @@ span{
     width: 60vw;
   }
   .uae-container {
-    position: fixed !important;
+    position: absolute !important;
     right: 0;
     bottom: 0;
     top: auto; /* Ensure top is unset */
@@ -164,9 +166,12 @@ span{
   }
 }
 
+.parentClass{
+  position: relative;
+}
 /* Background image */
 .background-image {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

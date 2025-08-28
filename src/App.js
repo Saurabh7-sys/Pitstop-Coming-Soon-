@@ -11,7 +11,8 @@ import gear2 from "./assets/gear2.png";
 import Logo from "./assets/PitStopLogo.webp";
 import Uae from "./assets/Uae.webp";
 import Marquee from "react-fast-marquee";
-import './index.css';
+// import './index.css';
+import './App.css'
 
 const ComingSoonPage = ({ 
   progressSpeed = 0.5,  
@@ -122,7 +123,7 @@ const ComingSoonPage = ({
 
   return (
     
-    <div className= "min-vh-100 d-flex flex-column ml-0 justify-content-between bgcontainer" >
+    <div className= "min-vh-100 d-flex flex-column ml-0 justify-content-between bgcontainer  parentClass" >
     {/* // <div className={`min-vh-100 d-flex flex-column ml-0 justify-content-between ${backgrounds[currentBg]}`}> */}
       {/* Background Image */}
       <div className="background-image"></div>
