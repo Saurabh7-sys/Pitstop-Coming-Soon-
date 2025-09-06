@@ -1,8 +1,8 @@
 import React from 'react'
 import ForDesktop from '../components/ForDesktop/ForDesktop';
-import buyAndSell from './assets/buyAndSell.png'
+import buyAndSell from './assets/buysell.jpg'
 import rent from './assets/Rent.png'
-import spareParts from './assets/spareParts.png'
+import spareParts from './assets/image 222.png'
 import garage from './assets/garage.png'
 import tow from './assets/tow.png'
 
