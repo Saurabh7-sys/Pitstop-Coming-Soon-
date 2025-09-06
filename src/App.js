@@ -132,9 +132,9 @@ const ComingSoonPage = ({
       <div className={`logo-container ${isMobile ? 'logo-mobile' : 'logo-desktop'}`}>
         <img className="logo" src={Logo} alt="PitStop Logo" />
       </div>
-      <div className="uae-container">
+      {/* <div className="uae-container">
         <img className="uae" src={Uae} alt="uae Logo" />
-      </div>
+      </div> */}
 
       {/* Empty space in the middle */}
       <div className="flex-grow-1"></div>

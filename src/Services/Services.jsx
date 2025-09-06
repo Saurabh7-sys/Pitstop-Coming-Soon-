@@ -31,7 +31,7 @@ const Services = () => {
         },
         {
             image: spareParts,
-            title: (<>Spare&nbsp;Parts</>),
+            title: (<>Auto&nbsp;Spare&nbsp;Parts</>),
             // subtitle: "Backend Engineer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",
@@ -49,7 +49,7 @@ const Services = () => {
         },
         {
             image: tow,
-            title: (<>Tow&nbsp;Service</>),
+            title: (<>Emergency&nbsp;Tow&nbsp;Service</>),
             // subtitle: "Backend Engineer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",

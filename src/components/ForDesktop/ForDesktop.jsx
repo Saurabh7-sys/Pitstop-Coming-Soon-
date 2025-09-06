@@ -22,7 +22,7 @@ export const ForDesktop = ({
     {
       image: "https://i.pravatar.cc/300?img=8",
       title: "Buy/ Sell",
-      subtitle: "Full Stack Developer",
+      // subtitle: "Full Stack Developer",
       handle: "@alexrivera",
       borderColor: "#4F46E5",
       gradient: "linear-gradient(145deg, #4F46E5, #000)",
@@ -30,7 +30,7 @@ export const ForDesktop = ({
     {
       image: "https://i.pravatar.cc/300?img=11",
       title: "Rent",
-      subtitle: "DevOps Engineer",
+      // subtitle: "DevOps Engineer",
       handle: "@jordanchen",
       borderColor: "#10B981",
       gradient: "linear-gradient(210deg, #10B981, #000)",
@@ -38,7 +38,7 @@ export const ForDesktop = ({
     {
       image: "https://i.pravatar.cc/300?img=3",
       title: "Spare Parts",
-      subtitle: "UI/UX Designer",
+      // subtitle: "UI/UX Designer",
       handle: "@morganblake",
       borderColor: "#F59E0B",
       gradient: "linear-gradient(165deg, #F59E0B, #000)",
@@ -46,7 +46,7 @@ export const ForDesktop = ({
     {
       image: "https://i.pravatar.cc/300?img=16",
       title: "Garage",
-      subtitle: "Data Scientist",
+      // subtitle: "Data Scientist",
       handle: "@caseypark",
       borderColor: "#EF4444",
       gradient: "linear-gradient(195deg, #EF4444, #000)",
@@ -54,7 +54,7 @@ export const ForDesktop = ({
     {
       image: "https://i.pravatar.cc/300?img=25",
       title: "Tow Service",
-      subtitle: "Mobile Developer",
+      // subtitle: "Mobile Developer",
       handle: "@thesamkim",
       borderColor: "#8B5CF6",
       gradient: "linear-gradient(225deg, #8B5CF6, #000)",
@@ -147,7 +147,7 @@ export const ForDesktop = ({
           </div>
           <footer className="chroma-info">
             <h3 className="name">{c.title}</h3>
-            <p className="role">{c.subtitle}</p>
+            {/* <p className="role">{c.subtitle}</p> */}
           </footer>
         </article>
       ))}

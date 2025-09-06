@@ -8,7 +8,6 @@ const Footer = () => {
     <footer className={style.footerMain}>
       <div className={style.footerContent}>
         <img src={logo} alt="Company Logo" className={style.logo} />
-        <p className={style.launching}><FaRocket /> Launching Soon</p>
         <p className={style.copy}>© {new Date().getFullYear()} PitStop. All rights reserved.</p>
         <p className={style.country}><FaGlobe /> Dubai, UAE</p>
       </div>

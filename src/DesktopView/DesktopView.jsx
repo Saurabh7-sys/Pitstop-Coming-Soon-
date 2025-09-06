@@ -14,7 +14,7 @@ const DesktopView = () => {
         {
             image: buyAndSell,
             title: (<>Buy/&nbsp;Sell</>),
-            subtitle: "Frontend Developer",
+            // subtitle: "Frontend Developer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",
             gradient: "linear-gradient(145deg, #F4B520, #000)",
@@ -22,7 +22,7 @@ const DesktopView = () => {
         {
             image: rent,
             title: "Rent",
-            subtitle: "Backend Engineer",
+            // subtitle: "Backend Engineer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",
             gradient: "linear-gradient(145deg, #F4B520, #000)",
@@ -30,8 +30,8 @@ const DesktopView = () => {
         },
         {
             image: spareParts,
-            title: (<>Spare&nbsp;Parts</>),
-            subtitle: "Backend Engineer",
+            title: (<>Auto&nbsp;Spare&nbsp;Parts</>),
+            // subtitle: "Backend Engineer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",
             gradient: "linear-gradient(145deg, #F4B520, #000)",
@@ -43,7 +43,7 @@ const DesktopView = () => {
         {
             image: garage,
             title: "Garage",
-            subtitle: "Frontend Developer",
+            // subtitle: "Frontend Developer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",
             gradient: "linear-gradient(145deg, #F4B520, #000)",
@@ -51,8 +51,8 @@ const DesktopView = () => {
         },
         {
             image: tow,
-            title: (<>Tow&nbsp;Service</>),
-            subtitle: "Backend Engineer",
+            title: (<>Emergency&nbsp;Tow&nbsp;Service</>),
+            // subtitle: "Backend Engineer",
             // handle: "@Pitstop",
             borderColor: "#FFFFFF",
             gradient: "linear-gradient(145deg, #F4B520, #000)",
